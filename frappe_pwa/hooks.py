@@ -26,8 +26,8 @@ app_license = "AGPL v3"
 # include js, css files in header of web template
 app_include_css = ["/assets/frappe_pwa/css/pwa-alerts.css"]
 app_include_js = [
-    "pwa.js",
-    "sw.js"
+    "/pwa.js",
+    "/sw.js"
 ]
 
 # include js in page
