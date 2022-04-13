@@ -8,16 +8,16 @@
 var CACHE_NAME = 'frappe-cache-v{{ sw_version }}';
 
 var urlsToCache = [
-    '/',
-    '/manifest.json',
-    '{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}',
-    {% for include in include_css -%}
-    "{{ include }}",
-    {%- endfor -%}
-    // JS
-    {% for include in include_js %}
-    "{{ include }}",
-    {% endfor %}
+    // '/',
+    // '/manifest.json',
+    // '{{ (favicon or "/assets/frappe/images/favicon.png") | abs_url }}',
+    // {% for include in include_css -%}
+    // "{{ include }}",
+    // {%- endfor -%}
+    // // JS
+    // {% for include in include_js %}
+    // "{{ include }}",
+    // {% endfor %}
 ];
 
 // Install stage sets up the index page (home page) in the cache and opens a new cache
