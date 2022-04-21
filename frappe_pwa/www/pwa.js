@@ -136,15 +136,16 @@ if ('serviceWorker' in navigator) {
         if (installPromptEvent === null) {
             console.log('[PWA] No A2HS event stored for this device');
         } else {
-            if (window.location.pathname === '/install') {
-                // show to user prompt with PWA installation
-                showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install PWA?") }}', addToHomeScreen);
-            } else {
-                // show to user prompt with Install Page redirection
-                showPrompt('{{ _("Go to Install Page") }}', '{{ _("This device supports PWA") }}', function () {
-                        window.location.href = "/install";
-                    });
-            }
+            showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install PWA?") }}', addToHomeScreen);
+            // if (window.location.pathname === '/install') {
+            //     // show to user prompt with PWA installation
+            //     showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install PWA?") }}', addToHomeScreen);
+            // } else {
+            //     // show to user prompt with Install Page redirection
+            //     showPrompt('{{ _("Go to Install Page") }}', '{{ _("This device supports PWA") }}', function () {
+            //             window.location.href = "/install";
+            //         });
+            // }
         }
     }
 
