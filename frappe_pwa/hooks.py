@@ -30,7 +30,13 @@ app_include_js = [
     "/sw.js"
 ]
 
+webform_include_js = [
+    "/pwa.js",
+    "/sw.js"
+]
+
 allowed_web_paths = ["/pwa", "/sw", "/manifest"]
+after_migrate = ['frappe_pwa.after_migrate']
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
