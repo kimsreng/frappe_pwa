@@ -30,7 +30,7 @@ app_include_js = [
     "/sw.js"
 ]
 
-allowed_web_paths = ["/pwa", "/sw", "/manifest"],
+allowed_web_paths = ["/pwa", "/sw", "/manifest"]
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
