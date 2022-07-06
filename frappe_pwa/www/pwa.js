@@ -136,7 +136,7 @@ if ('serviceWorker' in navigator) {
         if (installPromptEvent === null) {
             console.log('[PWA] No A2HS event stored for this device');
         } else {
-            showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install as an application?") }}', addToHomeScreen);
+            showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install the system as an application?") }}', addToHomeScreen);
             // if (window.location.pathname === '/install') {
             //     // show to user prompt with PWA installation
             //     showPrompt(('{{ _("Install") }}'), '{{ _("Do you want to install PWA?") }}', addToHomeScreen);
